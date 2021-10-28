@@ -398,9 +398,9 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Ubuntu", "Arial Narrow", sans-serif;
+  font-family: "Hideko", "Arial Narrow", sans-serif;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   font-weight: 400;
 }
 
@@ -517,47 +517,23 @@ img {
   }
 }
 
-/* ubuntu-300 - cyrillic */
+/* kashima */
 @font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/ubuntu/ubuntu-v15-cyrillic-300.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/ubuntu/ubuntu-v15-cyrillic-300.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/ubuntu-v15-cyrillic-300.woff2") format("woff2"), url("../fonts/ubuntu/ubuntu-v15-cyrillic-300.woff") format("woff"), url("../fonts/ubuntu/ubuntu-v15-cyrillic-300.ttf") format("truetype"), url("../fonts/ubuntu/ubuntu-v15-cyrillic-300.svg#Ubuntu") format("svg");
-  /* Legacy iOS */
-}
-
-/* ubuntu-regular - cyrillic */
-@font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Kashima Brash';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/ubuntu/ubuntu-v15-cyrillic-regular.eot");
+  src: url("/fonts/kashima/Kashima.otf ");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/ubuntu/ubuntu-v15-cyrillic-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/ubuntu-v15-cyrillic-regular.woff2") format("woff2"), url("../fonts/ubuntu/ubuntu-v15-cyrillic-regular.woff") format("woff"), url("../fonts/ubuntu/ubuntu-v15-cyrillic-regular.ttf") format("truetype"), url("../fonts/ubuntu/ubuntu-v15-cyrillic-regular.svg#Ubuntu") format("svg");
-  /* Legacy iOS */
 }
 
-/* ubuntu-500 - cyrillic */
+/* hideko-regular*/
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Hideko';
   font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/ubuntu/ubuntu-v15-cyrillic-500.eot");
+  font-weight: 400;
+  src: url("/fonts/hideco/Hideko.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("../fonts/ubuntu/ubuntu-v15-cyrillic-500.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/ubuntu-v15-cyrillic-500.woff2") format("woff2"), url("../fonts/ubuntu/ubuntu-v15-cyrillic-500.woff") format("woff"), url("../fonts/ubuntu/ubuntu-v15-cyrillic-500.ttf") format("truetype"), url("../fonts/ubuntu/ubuntu-v15-cyrillic-500.svg#Ubuntu") format("svg");
-  /* Legacy iOS */
-}
-
-/* ubuntu-700 - cyrillic */
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/ubuntu/ubuntu-v15-cyrillic-700.eot");
-  /* IE9 Compat Modes */
-  src: local(""), url("../fonts/ubuntu/ubuntu-v15-cyrillic-700.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/ubuntu-v15-cyrillic-700.woff2") format("woff2"), url("../fonts/ubuntu/ubuntu-v15-cyrillic-700.woff") format("woff"), url("../fonts/ubuntu/ubuntu-v15-cyrillic-700.ttf") format("truetype"), url("../fonts/ubuntu/ubuntu-v15-cyrillic-700.svg#Ubuntu") format("svg");
+  src: local(""), url("/fonts/hideco/Hideko.woff2") format("woff2"), url("/fonts/hideco/Hideko.woff") format("woff"), url("/fonts/hideco/Hideko.ttf") format("truetype"), url("/fonts/hideco/Hideko.svg#Hideko") format("svg");
   /* Legacy iOS */
 }
 
@@ -878,7 +854,6 @@ input[type="radio"].visually-hidden {
   width: 120px;
   -webkit-border-radius: 10px;
           border-radius: 10px;
-  font-size: 14px;
   font-weight: 500;
   border: none;
   -webkit-transition: all 0.3s ease-in-out;
@@ -890,21 +865,8 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
+.reservation-btn,
 .delivery-btn {
-  color: #fff;
-  background-color: #ea482b;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.delivery-btn:hover, .delivery-btn:focus, .delivery-btn:active {
-  cursor: pointer;
-  color: #000;
-  background-color: #fff;
-}
-
-.reservation-btn {
   color: #000;
   background-color: #fff;
   -webkit-transition: all 0.3s ease-in-out;
@@ -912,7 +874,10 @@ input[type="radio"].visually-hidden {
   transition: all 0.3s ease-in-out;
 }
 
-.reservation-btn:hover, .reservation-btn:focus, .reservation-btn:active {
+.reservation-btn:hover, .reservation-btn:focus, .reservation-btn:active,
+.delivery-btn:hover,
+.delivery-btn:focus,
+.delivery-btn:active {
   cursor: pointer;
   color: #fff;
   background-color: #ea482b;
@@ -1074,7 +1039,7 @@ input[type="radio"].visually-hidden {
 }
 
 .page-01-home {
-  background: url(/img/bg-home.jpg), #44483f;
+  background: url(/img/bg-home-blur.jpg), #44483f;
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center top;
@@ -1090,8 +1055,9 @@ input[type="radio"].visually-hidden {
 
 .page-01-home .section__split {
   width: 100px;
-  border-bottom: 1px solid #fff;
-  margin: 10px;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 60px;
+  z-index: 2;
 }
 
 .page-01-home .section__buttons {
@@ -1104,6 +1070,8 @@ input[type="radio"].visually-hidden {
 }
 
 .page-01-home .main-title {
+  position: relative;
+  z-index: 2;
   color: #fff;
   text-shadow: 1px 2px 5px #000;
   -webkit-margin-before: 0em;
@@ -1111,9 +1079,27 @@ input[type="radio"].visually-hidden {
   -webkit-margin-after: 0em;
           margin-block-end: 0em;
   margin: 10px 0;
-  font-size: 36px;
-  font-weight: 700;
+  font-family: 'Kashima Brash';
+  font-size: 72px;
+  font-weight: 400;
   line-height: 40px;
+}
+
+.page-01-home .main-title::before {
+  content: "";
+  width: 210px;
+  height: 210px;
+  background-color: #ea482b;
+  opacity: .95;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  position: absolute;
+  top: -200%;
+  left: 8%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: -1;
 }
 
 .page-01-home .main-subtitle {
@@ -1123,21 +1109,31 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+  z-index: 2;
 }
 
 @media only screen and (min-width: 768px) {
   .page-01-home .main-title {
-    font-size: 70px;
-    font-weight: 700;
-    line-height: 42px;
-    margin-bottom: 30px;
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 50px;
   }
-}
-
-.page-01-home .main-subtitle {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
+  .page-01-home .main-title::before {
+    width: 360px;
+    height: 360px;
+    top: -400%;
+    left: 15%;
+  }
+  .page-01-home .main-subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .page-01-home .section__split {
+    margin-top: 15px;
+    margin-bottom: 80px;
+  }
 }
 
 .page-02-about {

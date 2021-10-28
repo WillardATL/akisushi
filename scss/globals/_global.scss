@@ -30,9 +30,10 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Ubuntu", "Arial Narrow", sans-serif;
+  //font-family: "Ubuntu", "Arial Narrow", sans-serif;
+  font-family: "Hideko", "Arial Narrow", sans-serif;;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 24px;
   font-weight: 400;
   &.bodyOverflow {
       overflow: hidden;
@@ -93,6 +94,7 @@ img {
 .grid {
   display: grid;
 }
+
 .subtitle {
   font-size: 24px;
   line-height: 30px;
