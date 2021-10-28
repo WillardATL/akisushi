@@ -1,0 +1,65 @@
+.button {
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:focus,
+    &:active {
+        cursor: pointer;
+    }
+}
+
+.delivery-btn {
+    color: $color-white;
+    background-color: $color-accent;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:focus,
+    &:active {
+        cursor: pointer;
+        color: $color-black;
+        background-color: $color-white;
+    }
+}
+
+.reservation-btn {
+    color: $color-black;
+    background-color: $color-white;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:focus,
+    &:active {
+        cursor: pointer;
+        color: $color-white;
+        background-color: $color-accent;
+    }
+}
+
+.interior-btn,
+.menu-btn {
+    color: $color-white;
+    background-color: $color-black;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:focus,
+    &:active {
+        cursor: pointer;;
+        background-color: $color-accent;
+    }
+}
+
+
+
+@media only screen and (min-width:768px) {
+    .button {
+        height: 40px;
+        width: 160px;
+        }
+}
+
+
+  

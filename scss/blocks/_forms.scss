@@ -1,0 +1,56 @@
+.form {
+    align-items: center;
+
+    &__subtitle {
+        color: $color-accent;
+        align-self: flex-start;
+    }
+
+    &__text {
+        height: 150px;
+        line-height: 1.5em;
+        padding: 10px 15px;
+        width: 100%;
+        background: $color-grey;
+        border: none;
+        margin-bottom: 30px;
+        color: $color-white;
+        font-weight: 300;
+    }
+
+    &__label {
+        position: relative;
+        width: 100%;
+        color: lighten($color-grey, 50);
+    }
+
+    &__input {
+        line-height: 1.5em;
+        padding: 10px 15px;
+        width: 100%;
+        background: $color-grey;
+        border: none;
+        margin-bottom: 10px;
+        color: $color-white;
+        font-weight: 300;
+    }
+
+    &__button {
+        align-self: flex-end;
+        background-color: transparent;
+        border: none;
+        color: lighten($color-grey, 50);
+        border-bottom: 1px dashed $color-link;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .js-validate-error-label {
+        position: absolute;
+        top: 20%;
+        right: 5px;
+        color: rgb(255, 1, 1) !important;
+    }
+}

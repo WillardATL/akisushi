@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="AkiSushi - japanese restaurant" />
+    <title>AkiSushi</title>
+    <link rel="preload" href="../fonts/ubuntu/ubuntu-v15-cyrillic-300.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/ubuntu/ubuntu-v15-cyrillic-regular.woff2" as="font" type="font/woff2"
+        crossorigin>
+    <link rel="preload" href="../fonts/ubuntu/ubuntu-v15-cyrillic-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="../fonts/ubuntu/ubuntu-v15-cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body id="body">
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__body">
+                <div class="logo">
+                    <a class="logo__link" href="#home">
+                        <img class="logo__img" src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#about">ABOUT</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#menu">MENU</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#contacts">CONTACTS</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="burger">
+                    <input class="burger__checkbox" type="checkbox" id="burgerCheckbox">
+                    <div class="burger-button">
+                        <label class="burger__label" for="burgerCheckbox" id="burgerLable"></label>
+                        <div class="burger-button__lines"></div>
+                    </div>
+                    <nav class="burger-menu">
+                        <ul class="burger-menu__list" id="burgerMenuList">
+                            <li class="burger-menu__item">
+                                <a class="burger-menu__link" href="#about">ABOUT</a>
+                            </li>
+                            <li class="burger-menu__item">
+                                <a class="burger-menu__link" href="#menu">MENU</a>
+                            </li>
+                            <li class="burger-menu__item">
+                                <a class="burger-menu__link" href="#contacts">CONTACTS</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="content">
+            <section class="section page-01-home" id="home">
+                <div class="container">
+                    <div class="section__body flex-column">
+                        <h1 class="main-title">AKI SUSHI</h1>
+                        <h2 class="main-subtitle">piece of Japan next to you</h2>
+                        <div class="section__split"></div>
+                        <div class="section__buttons">
+                            <button class="button delivery-btn" type="button" id="deliveryBtn">DELIVERY</button>
+                            <button class="button reservation-btn" type="button"
+                                id="reservationBtn">RESERVATION</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section page-02-about" id="about">
+                <div class="container">
+                    <div class="section__body flex-column">
+                        <h2 class="subtitle">ABOUT US</h2>
+                        <div class="section__split"></div>
+                        <p class="paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Cursus turpis massa tincidunt dui ut. Urna condimentum mattis
+                            pellentesque id nibh tortor id aliquet. Pretium viverra suspendisse potenti nullam ac tortor
+                            vitae purus. Magna etiam tempor orci eu lobortis elementum nibh. Sit amet consectetur
+                            adipiscing
+                            elit. Amet purus gravida quis blandit turpis cursus in hac habitasse. Commodo elit at
+                            imperdiet
+                            dui accumsan sit. Ut venenatis tellus in metus. Id eu nisl nunc mi ipsum faucibus. Quisque
+                            non
+                            tellus orci ac.
+                        </p>
+                        <button class="button interior-btn" type="button" id="interionBtn">OUR INTERIOR</button>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section page-03-menu" id="menu">
+                <div class="container">
+                    <div class="section__body flex-column">
+                        <h2 class="subtitle">FEATURED ROLLS</h2>
+                        <div class="section__split"></div>
+                        <div class="section__gallery grid">
+                            <div class="item item-01 flex-column">
+                                <h3 class="item__title">SUNNY SALMON</h3>
+                                <p class="item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button class="button featured-btn" type="button" id="featuredBtn-01">Order</button>
+                            </div>
+                            <div class="item item-02 flex-column">
+                                <h3 class="item__title">SUNNY SALMON</h3>
+                                <p class="item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button class="button featured-btn" type="button" id="featuredBtn-01">Order</button>
+                            </div>
+                            <div class="item item-03 flex-column">
+                                <h3 class="item__title">SUNNY SALMON</h3>
+                                <p class="item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button class="button featured-btn" type="button" id="featuredBtn-01">Order</button>
+                            </div>
+                            <div class="item item-04 flex-column">
+                                <h3 class="item__title">SUNNY SALMON</h3>
+                                <p class="item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button class="button featured-btn" type="button" id="featuredBtn-01">Order</button>
+                            </div>
+                            <div class="item item-01 flex-column">
+                                <h3 class="item__title">SUNNY SALMON</h3>
+                                <p class="item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button class="button featured-btn" type="button" id="featuredBtn-01">Order</button>
+                            </div>
+                            <div class="item item-02 flex-column">
+                                <h3 class="item__title">SUNNY SALMON</h3>
+                                <p class="item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button class="button featured-btn" type="button" id="featuredBtn-01">Order</button>
+                            </div>
+                            <div class="item item-03 flex-column">
+                                <h3 class="item__title">SUNNY SALMON</h3>
+                                <p class="item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button class="button featured-btn" type="button" id="featuredBtn-01">Order</button>
+                            </div>
+                            <div class="item item-04 flex-column">
+                                <h3 class="item__title">SUNNY SALMON</h3>
+                                <p class="item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button class="button featured-btn" type="button" id="featuredBtn-01">Order</button>
+                            </div>
+                        </div>
+                        <button class="button menu-btn" type="button" id="menuBtn">FULL MENU</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer" id="contacts">
+            <div class="container">
+                <div class="footer__body">
+                    <form class="footer__form form flex-column" id="form" name="form" action="mail.php" method="POST"
+                        enctype="multipart/form-data">
+                        <h3 class="form__subtitle">CONTACT US</h3>
+                        <br>
+                        <input type="hidden" name="form_subject" value="Message from customer - akisushi.com">
+                        <label class="form__label">Name<input class="form__input" id="userName" name="name" type='text'
+                                data-validate-field="name" placeholder="Enter your name*"></label>
+                        <label class="form__label">Phone<input class="form__input" id="userPhone" name="tel" type="tel"
+                                data-validate-field="tel" placeholder="Enter your phone number*"></label>
+                        <label class="form__label">Message<textarea class="form__text" name="text" type='text'
+                                placeholder="Enter your message"></textarea></label>
+                        <button class="form__button" id="btnForm" type="submit">Submit</button>
+                    </form>
+                    <div class="footer__section footer__section_map flex-column">
+                        <h3 class="form__subtitle">LOCATION</h3>
+                        <br>
+                        <iframe width="300" height="325" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                            src="https://maps.google.com/maps?q=33.9130482,-84.2610495&hl=es&z=10&output=embed">
+                        </iframe>
+                    </div>
+                    <div class="footer__section footer__section_contacts flex-column">
+                        <br>
+                        <br>
+                        <p class="footer__paragraph">5979 BUFORD HWY NE, <br> ATLANTA, GA 30340</p>
+                        <br>
+                        <a class="footer__link link-phone" href="tel:4701112233">(470) 111-2233</a>
+                        <br>
+                        <a class="footer__link link-mail" href="mailto:info@akisushi.com">info@akisushi.com</a>
+                        <br>
+                        <p class="footer__paragraph">Sunday - Thursday:</p>
+                        <p class="footer__paragraph">12:00 pm - 9:00 pm</p>
+                        <br>
+                        <p class="footer__paragraph">Friday - Saturday:</p>
+                        <p class="footer__paragraph">12:00 pm - 10:00 pm</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+.page-02-about {
+    padding: 50px 0;
+    .section__body {
+        align-items: center;
+        text-align: center;
+    }
+
+    .section__split {
+        width:100px;
+        border-bottom: 2px solid $color-accent;
+        margin: 10px;
+    }
+    @media only screen and (min-width:768px) {
+        .interior-btn {
+            align-self: flex-end;
+        }
+    }
+
+}
