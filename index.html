@@ -38,7 +38,7 @@
                 </nav>
                 <div class="header__button">
                     <button class="button reservation-btn-red" type="button"
-                                id="headerReservationBtn">RESERVATION</button>
+                        id="headerReservationBtn">RESERVATION</button>
                 </div>
                 <div class="burger">
                     <input class="burger__checkbox" type="checkbox" id="burgerCheckbox">
@@ -60,7 +60,7 @@
                         </ul>
                         <div class="borger-menu__button">
                             <button class="button reservation-btn-red" type="button"
-                                        id="headerReservationBtn">RESERVATION</button>
+                                id="burgerReservationBtn">RESERVATION</button>
                         </div>
                     </nav>
                 </div>
@@ -126,49 +126,49 @@
                                 <p class="item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </p>
-                                <button class="button featured-btn" type="button" id="featuredBtn-01">Order</button>
+                                <button class="button featured-btn" type="button" id="featuredBtn-02">Order</button>
                             </div>
                             <div class="item item-03 flex-column">
                                 <h3 class="item__title">SUNNY SALMON</h3>
                                 <p class="item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </p>
-                                <button class="button featured-btn" type="button" id="featuredBtn-01">Order</button>
+                                <button class="button featured-btn" type="button" id="featuredBtn-03">Order</button>
                             </div>
                             <div class="item item-04 flex-column">
                                 <h3 class="item__title">SUNNY SALMON</h3>
                                 <p class="item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </p>
-                                <button class="button featured-btn" type="button" id="featuredBtn-01">Order</button>
+                                <button class="button featured-btn" type="button" id="featuredBtn-04">Order</button>
                             </div>
                             <div class="item item-01 flex-column">
                                 <h3 class="item__title">SUNNY SALMON</h3>
                                 <p class="item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </p>
-                                <button class="button featured-btn" type="button" id="featuredBtn-01">Order</button>
+                                <button class="button featured-btn" type="button" id="featuredBtn-05">Order</button>
                             </div>
                             <div class="item item-02 flex-column">
                                 <h3 class="item__title">SUNNY SALMON</h3>
                                 <p class="item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </p>
-                                <button class="button featured-btn" type="button" id="featuredBtn-01">Order</button>
+                                <button class="button featured-btn" type="button" id="featuredBtn-06">Order</button>
                             </div>
                             <div class="item item-03 flex-column">
                                 <h3 class="item__title">SUNNY SALMON</h3>
                                 <p class="item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </p>
-                                <button class="button featured-btn" type="button" id="featuredBtn-01">Order</button>
+                                <button class="button featured-btn" type="button" id="featuredBtn-07">Order</button>
                             </div>
                             <div class="item item-04 flex-column">
                                 <h3 class="item__title">SUNNY SALMON</h3>
                                 <p class="item__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </p>
-                                <button class="button featured-btn" type="button" id="featuredBtn-01">Order</button>
+                                <button class="button featured-btn" type="button" id="featuredBtn-08">Order</button>
                             </div>
                         </div>
                         <button class="button menu-btn" type="button" id="menuBtn">FULL MENU</button>
@@ -177,43 +177,72 @@
             </section>
 
         </main>
+
         <footer class="footer" id="contacts">
             <div class="container">
                 <div class="footer__body">
-                    <form class="footer__form form flex-column" id="form" name="form" action="mail.php" method="POST"
-                        enctype="multipart/form-data">
-                        <h3 class="form__subtitle">CONTACT US</h3>
-                        <br>
-                        <input type="hidden" name="form_subject" value="Message from customer - akisushi.com">
-                        <label class="form__label">Name<input class="form__input" id="userName" name="name" type='text'
-                                data-validate-field="name" placeholder="Enter your name*"></label>
-                        <label class="form__label">Phone<input class="form__input" id="userPhone" name="tel" type="tel"
-                                data-validate-field="tel" placeholder="Enter your phone number*"></label>
-                        <label class="form__label">Message<textarea class="form__text" name="text" type='text'
-                                placeholder="Enter your message"></textarea></label>
-                        <button class="form__button" id="btnForm" type="submit">Submit</button>
-                    </form>
-                    <div class="footer__section footer__section_map flex-column">
-                        <h3 class="form__subtitle">LOCATION</h3>
-                        <br>
-                        <iframe width="300" height="325" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                            src="https://maps.google.com/maps?q=33.9130482,-84.2610495&hl=es&z=10&output=embed">
-                        </iframe>
+                    <div class="footer__content">
+                        <form class="footer__form form flex-column" id="form" name="form" action="mail.php"
+                            method="POST" enctype="multipart/form-data">
+                            <h3 class="form__subtitle">CONTACT US</h3>
+                            <br>
+                            <input type="hidden" name="form_subject" value="Message from customer - akisushi.com">
+                            <label class="form__label">Name<input class="form__input" id="userName" name="name"
+                                    type='text' data-validate-field="name" placeholder="Enter your name*"></label>
+                            <label class="form__label">Phone<input class="form__input" id="userPhone" name="tel"
+                                    type="tel" data-validate-field="tel" placeholder="Enter your phone number*"></label>
+                            <label class="form__label">Message<textarea class="form__text" name="text"
+                                    placeholder="Enter your message"></textarea></label>
+                            <button class="form__button" id="btnForm" type="submit">Submit</button>
+                        </form>
+                        <div class="footer__section footer__section_map flex-column">
+                            <h3 class="form__subtitle">LOCATION</h3>
+                            <br>
+                            <iframe 
+                                src="https://maps.google.com/maps?q=33.9130482,-84.2610495&hl=es&z=10&output=embed">
+                            </iframe>
+                        </div>
+                        <div class="footer__section footer__section_contacts flex-column">
+                            <br>
+                            <br>
+                            <p class="footer__paragraph">5979 BUFORD HWY NE, <br> ATLANTA, GA 30340</p>
+                            <br>
+                            <a class="footer__link link-phone" href="tel:4701112233">(470) 111-2233</a>
+                            <br>
+                            <a class="footer__link link-mail" href="mailto:info@akisushi.com">info@akisushi.com</a>
+                            <br>
+                            <p class="footer__paragraph">Sunday - Thursday:</p>
+                            <p class="footer__paragraph">12:00 pm - 9:00 pm</p>
+                            <br>
+                            <p class="footer__paragraph">Friday - Saturday:</p>
+                            <p class="footer__paragraph">12:00 pm - 10:00 pm</p>
+                        </div>
                     </div>
-                    <div class="footer__section footer__section_contacts flex-column">
-                        <br>
-                        <br>
-                        <p class="footer__paragraph">5979 BUFORD HWY NE, <br> ATLANTA, GA 30340</p>
-                        <br>
-                        <a class="footer__link link-phone" href="tel:4701112233">(470) 111-2233</a>
-                        <br>
-                        <a class="footer__link link-mail" href="mailto:info@akisushi.com">info@akisushi.com</a>
-                        <br>
-                        <p class="footer__paragraph">Sunday - Thursday:</p>
-                        <p class="footer__paragraph">12:00 pm - 9:00 pm</p>
-                        <br>
-                        <p class="footer__paragraph">Friday - Saturday:</p>
-                        <p class="footer__paragraph">12:00 pm - 10:00 pm</p>
+                    <div class="footer__split"></div>
+
+                    <div class="footer__content">
+                        <nav class="footer__menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#about">ABOUT</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">OUR INTERIOR</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#menu">MENU</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">CAREER</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#contacts">CONTACTS</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link" href="#">SITEMAP</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -221,8 +250,6 @@
 
     </div>
 
-    <script src="js/just-validate.min.js"></script>
-    <script src="js/inputmask.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>
