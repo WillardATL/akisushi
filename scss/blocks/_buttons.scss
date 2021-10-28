@@ -20,9 +20,20 @@
     &:hover,
     &:focus,
     &:active {
-        cursor: pointer;
         color: $color-white;
         background-color: $color-accent;
+    }
+}
+
+.reservation-btn-red {
+    color: $color-white;
+    background-color: $color-accent;
+    transition: all 0.3s ease-in-out;
+    &:hover,
+    &:focus,
+    &:active {
+        color: $color-black;
+        background-color: $color-white;
     }
 }
 

@@ -638,6 +638,7 @@ input[type="radio"].visually-hidden {
   transition: height 0.5s ease-in-out;
   padding-left: 15px;
   overflow: auto;
+  z-index: 998;
 }
 
 .burger .burger-menu__list {
@@ -652,6 +653,7 @@ input[type="radio"].visually-hidden {
           flex-direction: column;
   gap: 30px;
   padding-top: 90px;
+  margin-bottom: 30px;
 }
 
 .burger .burger-menu__item {
@@ -756,6 +758,9 @@ input[type="radio"].visually-hidden {
 
 @media only screen and (max-width: 1023px) {
   .header .menu {
+    display: none;
+  }
+  .header__button {
     display: none;
   }
 }
@@ -878,9 +883,21 @@ input[type="radio"].visually-hidden {
 .delivery-btn:hover,
 .delivery-btn:focus,
 .delivery-btn:active {
-  cursor: pointer;
   color: #fff;
   background-color: #ea482b;
+}
+
+.reservation-btn-red {
+  color: #fff;
+  background-color: #ea482b;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.reservation-btn-red:hover, .reservation-btn-red:focus, .reservation-btn-red:active {
+  color: #000;
+  background-color: #fff;
 }
 
 .interior-btn,
@@ -1057,7 +1074,7 @@ input[type="radio"].visually-hidden {
   width: 100px;
   border-bottom: 2px solid #fff;
   margin-bottom: 60px;
-  z-index: 2;
+  z-index: 0;
 }
 
 .page-01-home .section__buttons {
@@ -1071,7 +1088,7 @@ input[type="radio"].visually-hidden {
 
 .page-01-home .main-title {
   position: relative;
-  z-index: 2;
+  z-index: 0;
   color: #fff;
   text-shadow: 1px 2px 5px #000;
   -webkit-margin-before: 0em;
@@ -1109,7 +1126,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  z-index: 2;
+  z-index: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1203,7 +1220,7 @@ input[type="radio"].visually-hidden {
   padding: 15px;
   overflow: hidden;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;

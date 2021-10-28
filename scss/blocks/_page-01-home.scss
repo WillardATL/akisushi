@@ -12,7 +12,7 @@
         width: 100px;
         border-bottom: 2px solid $color-white;
         margin-bottom: 60px;
-        z-index: 2;
+        z-index: 0;
     }
 
     .section__buttons {
@@ -23,7 +23,7 @@
 
     .main-title {
         position: relative;
-        z-index: 2;
+        z-index: 0;
         color: $color-white;
         text-shadow: 1px 2px 5px $color-black;
         margin-block-start: 0em;
@@ -52,7 +52,7 @@
         text-shadow: 1px 2px 5px $color-black;
         margin: 0 10px 10px;
         @include font(16px, 400, 20px);
-        z-index: 2;
+        z-index: 0;
     }
 
     @media only screen and (min-width:768px) {
