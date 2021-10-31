@@ -44,13 +44,7 @@
 
         &:hover {
             cursor: pointer;
+            border-bottom: 1px solid $color-link;
         }
-    }
-
-    .js-validate-error-label {
-        position: absolute;
-        top: 20%;
-        right: 5px;
-        color: rgb(255, 1, 1) !important;
     }
 }

@@ -39,18 +39,18 @@
 
 .interior-btn,
 .menu-btn {
-    color: $color-white;
-    background-color: $color-black;
+    color: $color-black;
+    background-color: transparent;
+    border: 2px solid $color-accent;
     transition: all 0.3s ease-in-out;
     &:hover,
     &:focus,
     &:active {
         cursor: pointer;;
         background-color: $color-accent;
+        color: $color-white;
     }
 }
-
-
 
 @media only screen and (min-width:768px) {
     .button {

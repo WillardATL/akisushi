@@ -20,7 +20,10 @@
             <div class="header__body">
                 <div class="logo">
                     <a class="logo__link" href="#home">
-                        <img class="logo__img" src="img/logo.png" alt="logo">
+                        <picture>
+                            <source media="(max-width:1023px)" srcset="img/logo-02.png">
+                            <img class="logo__img" src="img/logo-03.png" alt="logo">
+                        </picture>
                     </a>
                 </div>
                 <nav class="menu">
@@ -185,6 +188,7 @@
                         <form class="footer__form form flex-column" id="form" name="form" action="mail.php"
                             method="POST" enctype="multipart/form-data">
                             <h3 class="form__subtitle">CONTACT US</h3>
+                            <div class="footer__split footer__split_up"></div>
                             <br>
                             <input type="hidden" name="form_subject" value="Message from customer - akisushi.com">
                             <label class="form__label">Name<input class="form__input" id="userName" name="name"
@@ -197,14 +201,13 @@
                         </form>
                         <div class="footer__section footer__section_map flex-column">
                             <h3 class="form__subtitle">LOCATION</h3>
+                            <div class="footer__split footer__split_up"></div>
                             <br>
                             <iframe 
                                 src="https://maps.google.com/maps?q=33.9130482,-84.2610495&hl=es&z=10&output=embed">
                             </iframe>
                         </div>
                         <div class="footer__section footer__section_contacts flex-column">
-                            <br>
-                            <br>
                             <p class="footer__paragraph">5979 BUFORD HWY NE, <br> ATLANTA, GA 30340</p>
                             <br>
                             <a class="footer__link link-phone" href="tel:4701112233">(470) 111-2233</a>
@@ -218,7 +221,7 @@
                             <p class="footer__paragraph">12:00 pm - 10:00 pm</p>
                         </div>
                     </div>
-                    <div class="footer__split"></div>
+                    <div class="footer__split footer__split_bottom"></div>
 
                     <div class="footer__content">
                         <nav class="footer__menu">

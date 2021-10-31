@@ -770,6 +770,8 @@ input[type="radio"].visually-hidden {
     -webkit-flex-basis: 150px;
         -ms-flex-preferred-size: 150px;
             flex-basis: 150px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .header .menu {
     display: -webkit-box;
@@ -902,8 +904,9 @@ input[type="radio"].visually-hidden {
 
 .interior-btn,
 .menu-btn {
-  color: #fff;
-  background-color: #000;
+  color: #000;
+  background-color: transparent;
+  border: 2px solid #ea482b;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -915,6 +918,7 @@ input[type="radio"].visually-hidden {
 .menu-btn:active {
   cursor: pointer;
   background-color: #ea482b;
+  color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -979,13 +983,7 @@ input[type="radio"].visually-hidden {
 
 .form__button:hover {
   cursor: pointer;
-}
-
-.form .js-validate-error-label {
-  position: absolute;
-  top: 20%;
-  right: 5px;
-  color: #ff0101 !important;
+  border-bottom: 1px solid #07519c;
 }
 
 .footer {
@@ -1042,6 +1040,10 @@ input[type="radio"].visually-hidden {
           justify-content: flex-start;
 }
 
+.footer__section_contacts {
+  margin-top: 0px;
+}
+
 .footer__subtitle {
   color: #ea482b;
 }
@@ -1058,8 +1060,19 @@ input[type="radio"].visually-hidden {
 }
 
 .footer__split {
-  width: 100%;
   border-bottom: 1px solid #fff;
+}
+
+.footer__split_up {
+  width: 60px;
+  margin: 10px 0;
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+}
+
+.footer__split_bottom {
+  width: 100%;
   margin: 20px 0;
 }
 
@@ -1117,6 +1130,9 @@ input[type="radio"].visually-hidden {
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+  }
+  .footer__section_contacts {
+    margin-top: 65px;
   }
 }
 
@@ -1303,27 +1319,27 @@ input[type="radio"].visually-hidden {
 }
 
 .page-03-menu .item__paragraph {
-  color: #4d4e4f;
+  color: #d9d9d9;
   margin-bottom: 20px;
 }
 
 .page-03-menu .item .button {
   height: 30px;
   width: 100%;
+  border: none;
   font-size: 14px;
   font-weight: 600;
   color: #fff;
-  border: 2px solid #000;
   background-color: #ea482b;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
 }
 
 .page-03-menu .item .button:hover, .page-03-menu .item .button:focus, .page-03-menu .item .button:active {
   cursor: pointer;
   color: #000;
   background-color: #fff;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .page-03-menu .item::after {
@@ -1339,16 +1355,16 @@ input[type="radio"].visually-hidden {
 
 .page-03-menu .item:hover .item__title, .page-03-menu .item:focus .item__title {
   margin-top: 0px;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
 
 .page-03-menu .item:hover::after, .page-03-menu .item:focus::after {
-  opacity: 0;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  opacity: 0.40;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
 
 .page-03-menu .item-01::after {

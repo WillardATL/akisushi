@@ -23,6 +23,10 @@
         justify-content: flex-start;
     }
 
+    &__section_contacts {
+        margin-top: 0px;
+    }
+
     &__subtitle {
         color: $color-accent;
     }
@@ -40,9 +44,16 @@
     }
 
     &__split {
-        width: 100%;
         border-bottom: 1px solid $color-white;
-        margin: 20px 0;
+        &_up {
+            width: 60px;
+            margin: 10px 0;
+            align-self: flex-start;
+        }
+        &_bottom {
+            width: 100%;
+            margin: 20px 0;
+        }
     }
 
     &__menu {
@@ -82,6 +93,10 @@
 
         .footer__section_map {
             flex-grow: 1;
+        }
+
+        &__section_contacts {
+            margin-top: 65px;
         }
     }
 }

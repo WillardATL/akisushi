@@ -35,24 +35,24 @@
             margin-bottom: 10px;
         }
         &__paragraph {
-            color: $color-grey;
+            color: darken($color-white, 15);
             margin-bottom: 20px;
         }
         .button {
             height: 30px;
             width: 100%;
+            border: none;
             font-size: 14px;
             font-weight: 600;
             color: $color-white;
-            border: 2px solid $color-black;
             background-color:  $color-accent;
-            transition: all 0.3s ease-in-out;
             &:hover,
             &:focus,
             &:active {
                 cursor: pointer;
                 color: $color-black;
                 background-color:  $color-white;
+                transition: all .3s ease-in-out;
             }
         }
         &::after {
@@ -68,11 +68,11 @@
         &:hover, &:focus {
             .item__title {
                 margin-top: 0px;
-                transition: all 0.5s;
+                transition: all .5s;
             }
             &::after {
-                opacity: 0;
-                transition: all 0.5s;
+                opacity: 0.40;
+                transition: all .5s;
             }
         }
 
