@@ -512,8 +512,8 @@ img {
 @media (min-width: 768px) {
   .page-01-home,
   .footer {
-    min-height: -webkit-calc(100vh - 80px);
-    min-height: calc(100vh - 80px);
+    min-height: -webkit-calc(100vh - 75px);
+    min-height: calc(100vh - 75px);
   }
 }
 
@@ -767,9 +767,9 @@ input[type="radio"].visually-hidden {
 
 @media only screen and (min-width: 1024px) {
   .header .logo {
-    -webkit-flex-basis: 150px;
-        -ms-flex-preferred-size: 150px;
-            flex-basis: 150px;
+    -webkit-flex-basis: 180px;
+        -ms-flex-preferred-size: 180px;
+            flex-basis: 180px;
     padding-top: 15px;
     padding-bottom: 15px;
   }
@@ -1137,7 +1137,7 @@ input[type="radio"].visually-hidden {
 }
 
 .page-01-home {
-  background: url(/img/bg-home-blur.jpg), #44483f;
+  background: url(/img/bg-home-blur.webp), #44483f;
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center top;
@@ -1368,28 +1368,28 @@ input[type="radio"].visually-hidden {
 }
 
 .page-03-menu .item-01::after {
-  background-image: url("/img/item-01.jpg");
+  background-image: url("/img/item-01.webp");
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center;
 }
 
 .page-03-menu .item-02::after {
-  background-image: url("/img/item-02.jpg");
+  background-image: url("/img/item-02.webp");
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center;
 }
 
 .page-03-menu .item-03::after {
-  background-image: url("/img/item-03.jpg");
+  background-image: url("/img/item-03.webp");
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center;
 }
 
 .page-03-menu .item-04::after {
-  background-image: url("/img/item-04.jpg");
+  background-image: url("/img/item-04.webp");
   -webkit-background-size: cover;
           background-size: cover;
   background-position: center;
