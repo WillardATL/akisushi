@@ -400,7 +400,6 @@ body {
           flex-direction: column;
   font-family: "Hideko", "Arial Narrow", sans-serif;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
 }
 
@@ -437,11 +436,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-.content {
-  background-image: url(/img/Pattern_01.jpg);
-  background-repeat: repeat;
 }
 
 .page-01-home,
@@ -503,17 +497,17 @@ img {
 }
 
 .paragraph {
+  line-height: 1.5em;
   color: #4d4e4f;
   text-align: justify;
   text-indent: 1em;
-  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
   .page-01-home,
   .footer {
-    min-height: -webkit-calc(100vh - 75px);
-    min-height: calc(100vh - 75px);
+    min-height: -webkit-calc(100vh - 74px);
+    min-height: calc(100vh - 74px);
   }
 }
 
@@ -652,7 +646,7 @@ input[type="radio"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
-  padding-top: 90px;
+  padding-top: 100px;
   margin-bottom: 30px;
 }
 
@@ -662,7 +656,7 @@ input[type="radio"].visually-hidden {
 
 .burger .burger-menu__link {
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 20px;
   color: #fff;
@@ -704,8 +698,28 @@ input[type="radio"].visually-hidden {
   background-color: #ea482b;
 }
 
+.burger .burger-menu__button .button {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100vw;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  padding: 20px 0;
+  background-color: transparent;
+  color: transparent;
+}
+
 .burger__checkbox:checked ~ .burger-menu {
   height: 100vh;
+}
+
+.burger__checkbox:checked ~ .burger-menu .button {
+  color: wheat;
+  background-color: #ea482b;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .burger__checkbox:checked ~ .burger-button > .burger-button__lines {
@@ -803,7 +817,7 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   color: #fff;
   position: relative;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .menu__link:hover, .menu__link:active, .menu__link:focus {
@@ -857,10 +871,11 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
-  height: 30px;
   width: 120px;
-  -webkit-border-radius: 10px;
-          border-radius: 10px;
+  padding: 6px 0;
+  line-height: 1em;
+  -webkit-border-radius: 12px;
+          border-radius: 12px;
   font-weight: 500;
   border: none;
   -webkit-transition: all 0.3s ease-in-out;
@@ -923,7 +938,7 @@ input[type="radio"].visually-hidden {
 
 @media only screen and (min-width: 768px) {
   .button {
-    height: 40px;
+    padding: 10px 0;
     width: 160px;
   }
 }
@@ -943,13 +958,13 @@ input[type="radio"].visually-hidden {
 }
 
 .form__text {
-  height: 150px;
+  height: 110px;
   line-height: 1.5em;
   padding: 10px 15px;
   width: 100%;
   background: #4d4e4f;
   border: none;
-  margin-bottom: 30px;
+  margin-bottom: 17px;
   color: #fff;
   font-weight: 300;
 }
@@ -976,14 +991,15 @@ input[type="radio"].visually-hidden {
       -ms-flex-item-align: end;
           align-self: flex-end;
   background-color: transparent;
-  border: none;
+  border: 1px solid #4d4e4f;
+  width: 100%;
+  padding: 5px;
   color: #cdcece;
-  border-bottom: 1px dashed #07519c;
 }
 
 .form__button:hover {
   cursor: pointer;
-  border-bottom: 1px solid #07519c;
+  border: 1px solid #07519c;
 }
 
 .footer {
@@ -1101,11 +1117,11 @@ input[type="radio"].visually-hidden {
 }
 
 .footer .menu__item {
-  line-height: 12px;
+  line-height: 14px;
 }
 
 .footer .menu__link {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .footer .menu__link::before, .footer .menu__link::after {
@@ -1132,7 +1148,7 @@ input[type="radio"].visually-hidden {
             flex-grow: 1;
   }
   .footer__section_contacts {
-    margin-top: 65px;
+    margin-top: 60px;
   }
 }
 
@@ -1152,7 +1168,7 @@ input[type="radio"].visually-hidden {
 }
 
 .page-01-home .section__split {
-  width: 100px;
+  width: 120px;
   border-bottom: 2px solid #fff;
   margin-bottom: 60px;
   z-index: 0;
@@ -1165,6 +1181,15 @@ input[type="radio"].visually-hidden {
   display: inline-flex;
   gap: 20px;
   margin: 10px;
+}
+
+.page-01-home .section__buttons .button {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.page-01-home .section__buttons .button:hover, .page-01-home .section__buttons .button:focus, .page-01-home .section__buttons .button:active {
+  color: #fff;
+  background-color: #ea482b;
 }
 
 .page-01-home .main-title {
@@ -1204,7 +1229,7 @@ input[type="radio"].visually-hidden {
   color: #fff;
   text-shadow: 1px 2px 5px #000;
   margin: 0 10px 10px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 20px;
   z-index: 0;
@@ -1225,7 +1250,7 @@ input[type="radio"].visually-hidden {
     left: 15%;
   }
   .page-01-home .main-subtitle {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 400;
     line-height: 20px;
   }
@@ -1251,6 +1276,10 @@ input[type="radio"].visually-hidden {
   width: 100px;
   border-bottom: 2px solid #ea482b;
   margin: 10px;
+}
+
+.page-02-about .paragraph {
+  margin: 30px 0 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1281,24 +1310,26 @@ input[type="radio"].visually-hidden {
 
 .page-03-menu .section__gallery {
   width: 100%;
-  -ms-grid-columns: (240px)[auto-fill];
-      grid-template-columns: repeat(auto-fill, 240px);
+  -ms-grid-columns: (minmax(285px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  gap: 20px;
+  gap: 10px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 50px 10px;
+  margin: 30px 0 20px;
 }
 
 .page-03-menu .item {
   background-color: #000;
   color: #fff;
-  height: 240px;
-  min-width: 220px;
-  max-width: 240px;
+  height: 285px;
   padding: 15px;
   overflow: hidden;
   position: relative;
@@ -1314,7 +1345,7 @@ input[type="radio"].visually-hidden {
 }
 
 .page-03-menu .item__title {
-  margin-top: 195px;
+  margin-top: 237px;
   margin-bottom: 10px;
 }
 

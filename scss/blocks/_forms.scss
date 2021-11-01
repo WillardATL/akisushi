@@ -7,13 +7,13 @@
     }
 
     &__text {
-        height: 150px;
+        height: 110px;
         line-height: 1.5em;
         padding: 10px 15px;
         width: 100%;
         background: $color-grey;
         border: none;
-        margin-bottom: 30px;
+        margin-bottom: 17px;
         color: $color-white;
         font-weight: 300;
     }
@@ -38,13 +38,15 @@
     &__button {
         align-self: flex-end;
         background-color: transparent;
-        border: none;
+        border: 1px solid $color-grey;
+        width: 100%;
+        padding: 5px;
         color: lighten($color-grey, 50);
-        border-bottom: 1px dashed $color-link;
+        //border-bottom: 1px dashed $color-link;
 
         &:hover {
             cursor: pointer;
-            border-bottom: 1px solid $color-link;
+            border: 1px solid $color-link;
         }
     }
 }

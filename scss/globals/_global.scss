@@ -33,7 +33,6 @@ body {
   //font-family: "Ubuntu", "Arial Narrow", sans-serif;
   font-family: "Hideko", "Arial Narrow", sans-serif;;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
   &.bodyOverflow {
       overflow: hidden;
@@ -63,12 +62,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-
-.content {
-  background-image: url(/img/Pattern_01.jpg);
-  background-repeat: repeat;
 }
 
 .page-01-home,
@@ -104,15 +97,15 @@ img {
 }
 
 .paragraph {
+  line-height: 1.5em;
   color: $color-grey;
   text-align: justify;
   text-indent: 1em;
-  margin-bottom: 20px;
 }
 
 @media (min-width:768px) {
   .page-01-home,
   .footer {
-    min-height: calc(100vh - 75px);
+    min-height: calc(100vh - 74px);
   }
 }

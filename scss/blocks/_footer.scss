@@ -72,11 +72,11 @@
     }
 
     .menu__item {
-        line-height: 12px;
+        line-height: 14px;
     }
 
     .menu__link {
-        font-size: 10px;
+        font-size: 12px;
 
         &::before,
         &::after {
@@ -96,7 +96,7 @@
         }
 
         &__section_contacts {
-            margin-top: 65px;
+            margin-top: 60px;
         }
     }
 }

@@ -11,18 +11,17 @@
     }
     .section__gallery {
         width: 100%;
-        grid-template-columns: repeat(auto-fill, 240px);
+        grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
         grid-template-rows: auto;
-        gap: 20px;
+        gap: 10px;
+        align-items: center;
         justify-content: center;
-        margin: 50px 10px;
+        margin: 30px 0 20px;
     }
     .item {
         background-color: $color-black;
         color: $color-white;
-        height: 240px;
-        min-width: 220px;
-        max-width: 240px;
+        height: 285px;
         padding: 15px;
         overflow: hidden;
         position: relative;
@@ -31,7 +30,7 @@
         justify-content: space-between;
 
         &__title {
-            margin-top: 195px;
+            margin-top: 237px;
             margin-bottom: 10px;
         }
         &__paragraph {

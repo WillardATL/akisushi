@@ -74,7 +74,7 @@
             display: inline-flex;
             flex-direction: column;
             gap: 30px;
-            padding-top: 90px;
+            padding-top: 100px;
             margin-bottom: 30px;
         }
 
@@ -84,7 +84,7 @@
 
         &__link {
             text-decoration: none;
-            @include font(16px, 500, 20px);
+            @include font(18px, 500, 20px);
             color: $color-white;
             position: relative;
 
@@ -126,11 +126,27 @@
                 background-color: $color-accent;
             }
         }
+        &__button .button {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                width: 100vw;
+                border-radius: 0;
+                padding: 20px 0;
+                background-color: transparent;
+                color: transparent;
+        }
+        
     }
 }
 
 .burger__checkbox:checked~.burger-menu {
     height: 100vh;
+    .button {
+        color: wheat;
+        background-color: $color-accent;
+        transition: all 1s ease-in-out;
+    }
 }
 
 .burger__checkbox:checked~.burger-button>.burger-button__lines {
