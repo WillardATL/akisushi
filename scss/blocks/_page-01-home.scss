@@ -16,7 +16,8 @@
     }
 
     .section__buttons {
-        display: inline-flex;
+        display: flex;
+        flex-direction: column;
         gap: 20px;
         margin: 10px;
             .button {
@@ -85,5 +86,9 @@
             margin-top: 15px;
             margin-bottom: 80px;
         }
+        .section__buttons {
+            flex-direction: row;
+        }
+    
     }
 }
